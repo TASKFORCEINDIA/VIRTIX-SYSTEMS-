@@ -266,3 +266,49 @@ body {
   cursor: pointer;
 }
 
+.po-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.company-name {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.po-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.po-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.po-table th,
+.po-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.po-total {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.po-footer {
+  margin-top: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: #666;
+}
+
