@@ -233,3 +233,29 @@ footer {
   color: #777;
   border-top: 1px solid #eee;
 }
+.cta-btn {
+  background: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(11,94,215,0.2);
+}
+
+.cta-btn:hover {
+  background: #094db3;
+}
+.cta-wrapper {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+.whatsapp a {
+  background: #25d366;
+  padding: 12px 22px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
