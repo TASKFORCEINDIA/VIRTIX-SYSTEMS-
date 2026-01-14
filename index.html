@@ -166,6 +166,34 @@ function addRow() {
     <td><input type="text"></td>
   `;
 }
+function shareWhatsApp() {
+  const hospital = document.querySelector('input[placeholder="Hospital / Lab Name"]')?.value || "";
+  const city = document.querySelector('input[placeholder="City"]')?.value || "";
+  const vendor = document.querySelector('input[placeholder="Vendor Name"]')?.value || "";
+
+  let items = "";
+  const rows = document.querySelectorAll("#poTable tr");
+  rows.forEach((row, i) => {
+    if (i === 0) return;
+    const cols = row.querySelectorAll("input");
+    if (cols[0].value) {
+      items += `${i}. ${cols[0].value} – ${cols[1].value} ${cols[2].value}\n`;
+    }
+  });
+
+  const msg =
+`Purchase Order – VIRTIX SYSTEMS
+
+Hospital: ${hospital}
+City: ${city}
+
+Items:
+${items}
+
+Vendor: ${vendor}`;
+
+  window.open("https://wa.me/?text=" + encodeURIComponent(msg), "_blank");
+}
 
 
   
