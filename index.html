@@ -17,10 +17,11 @@
 
   <div class="product-grid">
 
-    <div class="product-card">
-      <h3>Medical Consumables</h3>
-      <p>Gloves · Syringes · Needles · IV Sets</p>
-    </div>
+    <div class="product-card" onclick="openCategory('medical')">
+  <h3>Medical Consumables</h3>
+  <p>Gloves · Syringes · Needles · IV Sets</p>
+</div>
+
 
     <div class="product-card">
       <h3>Lab Consumables</h3>
@@ -43,6 +44,18 @@
     </div>
 
   </div>
+</section>
+46 </div>
+47 </section>
+
+<!-- PASTE HERE (line 48) -->
+
+<section id="categoryView" style="display:none; padding:20px;">
+  <h3 id="categoryTitle"></h3>
+
+  <div id="categoryItems"></div>
+
+  <button onclick="closeCategory()">← Back</button>
 </section>
 
 
