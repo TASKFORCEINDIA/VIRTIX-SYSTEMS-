@@ -383,5 +383,28 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+  
+.glove-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(0,150,255,0.06), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(0,150,255,0.05), transparent 45%);
+  opacity: 0.6;
+}
+  .glove-overlay {
+  animation: breathe 12s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,100% { opacity: 0.5; }
+  50% { opacity: 0.7; }
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
 
 
