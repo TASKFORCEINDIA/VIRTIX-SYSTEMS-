@@ -101,16 +101,19 @@ header .actions a {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
 }
 
 .product-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 6px;
-  border: 1px solid #eee;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  text-align: center;
 }
+
+
 
 .product-card h4 {
   font-size: 16px;
@@ -293,11 +296,6 @@ footer {
   line-height: 1.4;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+
 
 
